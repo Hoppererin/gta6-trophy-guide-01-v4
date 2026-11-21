@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vice Platinum — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar" id="topbar">
+<header class="banner">
+  <div class="banner-inner">
+    <div class="banner-text">
+      <p class="eyebrow">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 trophies &middot; works fully offline</p>
+      <h1>Vice Platinum</h1>
+      <p class="tagline">Every GTA VI trophy, tracked — and every step of every guide cited.</p>
+      <p class="audit-strip" id="auditStrip" aria-label="Citation audit">Loading the citation audit…</p>
+    </div>
+    <div class="scorecard" id="scorecard">
+      <p class="scorecard-big"><strong id="earnedTotal">0 / 55</strong> <span>earned</span></p>
+      <div class="meter" role="progressbar" aria-label="Trophies earned"><div class="meter-fill" id="meterFill" style="width:0%"></div></div>
+      <p class="scorecard-grades" id="gradeLine">Platinum 0/1 &middot; Gold 0/2 &middot; Silver 0/6 &middot; Bronze 0/46</p>
+    </div>
+  </div>
+</header>
+
+<nav class="tabbar" aria-label="Guide sections">
+  <button type="button" class="tablink active" data-panel="tracker">Tracker</button>
+  <button type="button" class="tablink" data-panel="roadmap">Roadmap to Platinum</button>
+  <button type="button" class="tablink" data-panel="missables">Missables</button>
+  <button type="button" class="tablink" data-panel="sources">Sources &amp; Audit</button>
+</nav>
+</div>
+
+<main>
+  <section id="panel-tracker" class="panel">
+    <div class="controls">
+      <label class="find-label">Search <input id="findBox" type="search" placeholder="Find a trophy, mission or method…" autocomplete="off"></label>
+      <div class="filters" id="kindFilters" role="group" aria-label="Filter by kind"></div>
+      <label class="show-label">Show
+        <select id="statusPick">
+          <option value="all">All trophies</option>
+          <option value="remaining">Remaining only</option>
+          <option value="earned">Earned only</option>
+        </select>
+      </label>
+      <label class="hide-spoilers"><input id="spoilerBox" type="checkbox"> Hide story spoilers</label>
+      <div class="save-buttons">
+        <button id="exportBtn" type="button">Export progress</button>
+        <label class="import-btn">Import progress <input id="importFile" type="file" accept="application/json,.json"></label>
+      </div>
+    </div>
+    <p class="count-line" id="countLine"></p>
+    <div id="trophyCards" class="cards"></div>
+  </section>
+
+  <section id="panel-roadmap" class="panel hidden">
+    <h2>Roadmap to the Platinum</h2>
+    <p class="intro">One playthrough, about 200 hours (PowerPyx, 19 Nov 2026). Play the story first, then clean up in free-roam — everything stays available after the credits except the one Chapter 1 meditation. Keep a manual save at the start and end of each chapter: there is no mission replay.</p>
+    <div id="roadmapList"></div>
+  </section>
+
+  <section id="panel-missables" class="panel hidden">
+    <h2>Missable trophies</h2>
+    <div id="missableAlert"></div>
+    <h3>Every trophy, missable or not</h3>
+    <p class="intro">One trophy is possibly missable. The other 54 are not — the table says why for each one.</p>
+    <table class="grid-table">
+      <thead><tr><th>Trophy</th><th>Grade</th><th>Missable?</th><th>Why</th></tr></thead>
+      <tbody id="missableBody"></tbody>
+    </table>
+  </section>
+
+  <section id="panel-sources" class="panel hidden">
+    <h2>Sources &amp; Audit</h2>
+    <div id="auditBody"></div>
+  </section>
+</main>
+
+<footer>
+  <p>Fan-made guide. Not affiliated with, endorsed by, or connected to Rockstar Games, Take-Two Interactive, or PlayStation. Grand Theft Auto and GTA are trademarks of Take-Two Interactive. Trophy names and descriptions are shown as PlayStation publishes them; all guide text is written for this entry in our own words, and every step cites its sources.</p>
+  <p>This guide works fully offline: it loads nothing from the network. Your progress is stored only in this browser (localStorage) and in the file you export.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
